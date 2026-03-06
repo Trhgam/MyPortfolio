@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tran Thi Hong Gam | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -13,8 +16,15 @@
       src="https://kit.fontawesome.com/your-code.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      body { font-family: 'Outfit', sans-serif; }
+    </style>
   </head>
   <body>
+    <!-- Background Elements -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
     <header>
       <div class="logo">Tran Thi Hong <span>Gam</span></div>
       <nav>
@@ -28,8 +38,8 @@
       </nav>
     </header>
 
-    <section id="about" class="hero">
-      <div class="container">
+    <section id="about" class="hero section">
+      <div class="container reveal reveal-up active">
         <h1>Hello, I am <span>Tran Thi Hong Gam</span></h1>
         <h2>Aspiring Software Engineer @ FPT University</h2>
         <p>
@@ -41,7 +51,7 @@
           technical discipline to professional software teams.
         </p>
         <div class="hero-btns">
-          <a href="#contact" class="btn">Let's Connect →</a>
+          <a href="#contact" class="btn">Let's Connect <i class="fas fa-arrow-right" style="margin-left: 8px; font-size: 0.8em;"></i></a>
           <a
             href="https://github.com/Trhgam"
             target="_blank"
@@ -51,28 +61,35 @@
         </div>
       </div>
     </section>
+    <div class="beta">
+      <div class="betaitem">
+      </div>
+      
+    </div>
 
     <section id="skills" class="section">
       <div class="container">
-        <h3><i class="fas fa-code"></i> Technical <span>Skills</span></h3>
+        <h3 class="reveal reveal-left"><i class="fas fa-code"></i> Technical <span>Skills</span></h3>
 
-        <div class="skill-card">
-          <h4>Programming & Web</h4>
+        <div class="skill-card reveal reveal-up">
+          <h4 class="reveal reveal-up">Programming & Web</h4>
           <div class="tags">
-            <span>C</span> <span>Java</span> <span>HTML/CSS</span>
-            <span>JavaScript</span> <span>TypeScript</span> <span>Servlet</span>
-            <span>ExpressJS</span> <span>JSTL</span> <span>Bootstrap</span>
-            <span>Tailwind Css</span> <span>ReactJS </span> <span>ShadCN</span>
-            <span>Markdown</span>
+            <span class="reveal reveal-scale">C</span> <span class="reveal reveal-scale">Java</span> <span class="reveal reveal-scale">HTML/CSS</span>
+            <span class="reveal reveal-scale">JavaScript</span> <span class="reveal reveal-scale">TypeScript</span> <span class="reveal reveal-scale">Servlet</span>
+            <span class="reveal reveal-scale">ExpressJS</span> <span class="reveal reveal-scale">JSTL</span> <span class="reveal reveal-scale">Bootstrap</span>
+            <span class="reveal reveal-scale">Tailwind Css</span> <span class="reveal reveal-scale">ReactJS </span> <span class="reveal reveal-scale">ShadCN</span>
+            <span class="reveal reveal-scale">Markdown</span>
           </div>
 
-          <h4>Database</h4>
-          <div class="tags"><span>SQL Server</span> <span>MongoDB</span></div>
-
-          <h4>Design & Office</h4>
+          <h4 class="reveal reveal-up">Database</h4>
           <div class="tags">
-            <span>Figma</span> <span>Canva</span>
-            <span>Microsoft Word</span>
+            <span class="reveal reveal-scale">SQL Server</span> <span class="reveal reveal-scale">MongoDB</span>
+          </div>
+
+          <h4 class="reveal reveal-up">Design & Office</h4>
+          <div class="tags">
+            <span class="reveal reveal-scale">Figma</span> <span class="reveal reveal-scale">Canva</span>
+            <span class="reveal reveal-scale">Microsoft Word</span>
           </div>
         </div>
       </div>
@@ -80,26 +97,29 @@
 
     <section id="experience" class="section">
       <div class="container">
-        <h3>
+        <h3 class="reveal reveal-left">
           <i class="fas fa-briefcase"></i> Project <span>Experience</span>
         </h3>
         <!-- project 1 -->
-        <div class="experience-box" style="margin-bottom: 20px">
+        <div class="experience-box reveal reveal-up" style="margin-bottom: 30px">
           <div class="exp-header">
             <h4 class="company">OpticView Shop Project</h4>
             <div class="role">
               Team Project | Operation Staff & Frontend Lead
             </div>
 
-            <div class="project-links" style="margin-top: 5px">
+            <div class="project-links" style="margin-top: 10px">
               <a
                 href="https://github.com/NghiaDPTWorkk/fe-eyewear-swp391"
                 target="_blank"
                 style="
                   color: #5eead4;
                   text-decoration: none;
-                  font-size: 0.8rem;
-                  margin-right: 15px;
+                  font-size: 0.9rem;
+                  margin-right: 20px;
+                  background: rgba(94, 234, 212, 0.1);
+                  padding: 5px 12px;
+                  border-radius: 6px;
                 "
               >
                 <i class="fab fa-github"></i> GitHub
@@ -107,108 +127,129 @@
               <a
                 href="https://eyewear-optic.shop/"
                 target="_blank"
-                style="color: #5eead4; text-decoration: none; font-size: 0.8rem"
+                style="
+                  color: #5eead4; 
+                  text-decoration: none; 
+                  font-size: 0.9rem;
+                  background: rgba(94, 234, 212, 0.1);
+                  padding: 5px 12px;
+                  border-radius: 6px;
+                "
               >
                 <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
             </div>
           </div>
-          <ul>
-            <li>
+          <ul style="margin-top: 15px">
+            <li class="reveal reveal-right">
               <strong>Core Tech:</strong> Built Operation Dashboard with
               <strong>Vite</strong>, <strong>React</strong>,
               <strong>TypeScript</strong>, and <strong>Shadcn UI</strong>.
             </li>
-            <li>
+            <li class="reveal reveal-right">
               <strong>State & Styling:</strong> Optimized UI with
               <strong>Tailwind CSS</strong> and <strong>Zustand</strong> for
               state management.
             </li>
-            <li>
+            <li class="reveal reveal-right">
               <strong>DevOps & Quality:</strong> Standardized code with
               <strong>Husky</strong>, <strong>Commitlint</strong>,
               <strong>ESLint</strong>, and <strong>Prettier</strong>.
             </li>
-            <li>
+            <li class="reveal reveal-right">
               <strong>Deployment:</strong> Containerized application using
               <strong>Docker</strong> and deployed to production.
             </li>
-            <li>
+            <li class="reveal reveal-right">
               <strong>Workflow:</strong> Managed collaboration and source
               control via <strong>Git</strong>.
             </li>
           </ul>
         </div>
         <!-- project 2 -->
-        <div class="experience-box" style="margin-bottom: 20px">
+        <div class="experience-box reveal reveal-up" style="margin-bottom: 30px">
           <div class="exp-header">
             <h4 class="company">Hotel Management System</h4>
             <div class="role">Team Project | Fullstack Developer</div>
 
-            <div class="project-links" style="margin-top: 5px">
+            <div class="project-links" style="margin-top: 10px">
               <a
                 href="https://github.com/Thangwibu1/Hotel-Management"
                 target="_blank"
-                style="color: #5eead4; text-decoration: none; font-size: 0.8rem"
+                style="
+                  color: #5eead4; 
+                  text-decoration: none; 
+                  font-size: 0.9rem;
+                  background: rgba(94, 234, 212, 0.1);
+                  padding: 5px 12px;
+                  border-radius: 6px;
+                "
               >
                 <i class="fab fa-github"></i> GitHub
               </a>
             </div>
           </div>
-          <ul>
-            <li>
+          <ul style="margin-top: 15px">
+            <li class="reveal reveal-right">
               <strong>Core Tech:</strong> Developed a server-side web
               application using <strong>Java Servlet</strong>,
               <strong>JSP</strong>, and <strong>JSTL</strong>.
             </li>
-            <li>
+            <li class="reveal reveal-right">
               <strong>Database:</strong> Designed and managed
               <strong>SQL Server</strong> schemas with optimized queries for
               hotel operations.
             </li>
-            <li>
+            <li class="reveal reveal-right">
               <strong>Architecture:</strong> Implemented the
               <strong>MVC (Model-View-Controller)</strong> pattern to ensure
               clean and maintainable code.
             </li>
-            <li>
+            <li class="reveal reveal-right">
               <strong>Features:</strong> Built core modules including Service
               Booking, Housekeeping management, and Service Staff workflows.
             </li>
           </ul>
         </div>
 
-        <div class="experience-box" style="margin-bottom: 20px">
+        <div class="experience-box reveal reveal-up" style="margin-bottom: 30px">
           <div class="exp-header">
             <h4 class="company">Shopping Cart Backend</h4>
             <div class="role">Personal Project | Backend Developer</div>
 
-            <div class="project-links" style="margin-top: 5px">
+            <div class="project-links" style="margin-top: 10px">
               <a
                 href="https://github.com/Trhgam/Mern_Stack/tree/master/ch05-nodeJs/02-practice/03-shoppingCartBE"
                 target="_blank"
-                style="color: #5eead4; text-decoration: none; font-size: 0.8rem"
+                style="
+                  color: #5eead4; 
+                  text-decoration: none; 
+                  font-size: 0.9rem;
+                  background: rgba(94, 234, 212, 0.1);
+                  padding: 5px 12px;
+                  border-radius: 6px;
+                "
               >
                 <i class="fab fa-github"></i> GitHub
               </a>
             </div>
           </div>
-          <ul>
-            <li>
+          <ul style="margin-top: 15px">
+            <li class="reveal reveal-right">
               <strong>Core Tech:</strong> Developed a RESTful API for an
               e-commerce shopping cart system using
               <strong>ExpressJS</strong> and <strong>Node.js</strong>.
             </li>
-            <li>
+            <li class="reveal reveal-right">
               <strong>Data Management:</strong> Implemented efficient data
               handling for product catalogs, user carts, and order processing.
             </li>
-            <li>
+            <li class="reveal reveal-right">
               <strong>Testing & API Quality:</strong> Verified and documented
               all API endpoints using <strong>Postman</strong> to ensure
               seamless frontend integration.
             </li>
-            <li>
+            <li class="reveal reveal-right">
               <strong>Architecture:</strong> Applied modular code structure to
               manage routes, controllers, and services effectively.
             </li>
@@ -219,47 +260,47 @@
 
     <section id="education" class="section">
       <div class="container grid-2">
-        <div class="edu-card">
+        <div class="edu-card reveal reveal-left">
           <h3><i class="fas fa-graduation-cap"></i> Education</h3>
           <p><strong>FPT University HCMC</strong> (Until 09/2023)</p>
           <p>Major: Software Engineering</p>
         </div>
-        <div class="cert-card">
+        <div class="cert-card reveal reveal-right">
           <h3><i class="fas fa-certificate"></i> Certificates</h3>
-          <ul>
-            <li>Languages: English VSTEP B2, Japanese basic</li>
-            <li>Certificate: Gemini Certified Student</li>
-            <li>Certificate: City-level literature certificate 2019</li>
-            <li>Certificate: Provincial level literature certificate 2019</li>
-            <li>Certificate: Provincial level history certificate 2022</li>
-            <li>Coursera: AI for everyone</li>
-            <li>Coursera: HTML/CSS Web learning</li>
-            <li>Coursera: HTML/CSS with Java</li>
+          <ul class="experience-box" style="background: none; border: none; padding: 0;">
+            <li class="reveal reveal-right" style="margin-bottom: 8px;">Languages: English VSTEP B2, Japanese basic</li>
+            <li class="reveal reveal-right" style="margin-bottom: 8px;">Certificate: Gemini Certified Student</li>
+            <li class="reveal reveal-right" style="margin-bottom: 8px;">Certificate: City-level literature certificate 2019</li>
+            <li class="reveal reveal-right" style="margin-bottom: 8px;">Certificate: Provincial level literature certificate 2019</li>
+            <li class="reveal reveal-right" style="margin-bottom: 8px;">Certificate: Provincial level history certificate 2022</li>
+            <li class="reveal reveal-right" style="margin-bottom: 8px;">Coursera: AI for everyone</li>
+            <li class="reveal reveal-right" style="margin-bottom: 8px;">Coursera: HTML/CSS Web learning</li>
+            <li class="reveal reveal-right" style="margin-bottom: 8px;">Coursera: HTML/CSS with Java</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <div class="container">
+    <section id="contact" class="contact section">
+      <div class="container reveal reveal-up">
         <h3>Contact</h3>
         <p>
           I am always ready to exchange new opportunities. Don't hesitate to
           contact me!
         </p>
         <div class="contact-info">
-          <a href="mailto:honggamdx2@gmail.com" class="contact-btn">
-            <i class="fas fa-envelope"></i> honggamdx2@gmail.com
+          <a href="mailto:honggamdx2@gmail.com" class="contact-btn reveal reveal-scale">
+            <i class="fas fa-envelope" style="color: var(--primary-light)"></i> honggamdx2@gmail.com
           </a>
-          <a href="tel:0367847238" class="contact-btn">
-            <i class="fas fa-phone"></i> 0367847239
+          <a href="tel:0367847238" class="contact-btn reveal reveal-scale">
+            <i class="fas fa-phone" style="color: var(--primary-light)"></i> 0367847239
           </a>
           <a
             href="https://github.com/Trhgam"
             target="_blank"
-            class="contact-btn"
+            class="contact-btn reveal reveal-scale"
           >
-            <i class="fab fa-github"></i> GitHub: Trhgam
+            <i class="fab fa-github" style="color: var(--primary-light)"></i> GitHub: Trhgam
           </a>
         </div>
       </div>
@@ -268,5 +309,55 @@
     <footer>
       <p>&copy; 2024 Tran Thi Hong Gam. All Rights Reserved.</p>
     </footer>
+
+    <script>
+      // Intersection Observer for Granular Scroll Reveal
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Add a slight stagger effect based on order in parent
+            const delay = entry.target.dataset.delay || 0;
+            setTimeout(() => {
+              entry.target.classList.add('active');
+            }, delay);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Select all reveal elements
+      const revealElements = document.querySelectorAll('.reveal');
+      
+      revealElements.forEach((el, index) => {
+        // Automatically add stagger delays for children of the same parent
+        const parent = el.parentElement;
+        if (parent && (parent.classList.contains('tags') || parent.tagName === 'UL')) {
+          const siblings = Array.from(parent.children).filter(c => c.classList.contains('reveal'));
+          const siblingIndex = siblings.indexOf(el);
+          if (siblingIndex !== -1) {
+            el.dataset.delay = siblingIndex * 100;
+          }
+        }
+        observer.observe(el);
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
   </body>
 </html>
